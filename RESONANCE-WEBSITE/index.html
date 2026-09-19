@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESONANCE — Dead by Daylight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ambient ambient-a"></div>
+<div class="ambient ambient-b"></div>
+<div class="stars"></div>
+
+<header class="site-header">
+    <a class="brand" href="#home">
+        <span class="brand-mark"><img src="images/logo.jpg" alt="RESONANCE logo"></span>
+        <span>RESONANCE</span>
+    </a>
+
+<nav class="nav">
+    <a href="#team">ROSTER</a>
+    <a href="#achievements">ACHIEVEMENTS</a>
+    <a href="#matches">COMPETITION</a>
+    <a href="#record">RECORD</a>
+    <a href="#contact">CONTACT</a>
+</nav>
+
+    <a class="header-cta" id="headerDiscord" href="#" target="_blank" rel="noopener">
+        ENTER THE COVENANT ↗
+    </a>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-copy">
+            <div class="sigil-line"><span></span> DEAD BY DAYLIGHT / ESPORTS / THAILAND <span></span></div>
+            <h1>WELCOME<br><em>TO</em> TEAM RESONANCE</h1>
+            <p class="hero-sub">
+                RESONANCE is a competitive DBD team built from discipline,
+                communication and the will to stay composed when the trial turns dark.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#team">MEET THE ROSTER ↓</a>
+                <a class="btn btn-ghost" href="#matches">VIEW THE CURRENT TRIAL ↗</a>
+            </div>
+        </div>
+
+        <a class="hero-emblem" href="#team" aria-label="Go to roster">
+            <div class="halo halo-one"></div>
+            <div class="halo halo-two"></div>
+            <div class="moon"></div>
+            <div class="wing-wing wing-left"></div>
+            <div class="wing-wing wing-right"></div>
+            <div class="emblem-frame">
+                <img src="images/logo.jpg" alt="RESONANCE emblem">
+            </div>
+            <div class="mist"></div>
+            <div class="hero-label">ENTER THE RESONANCE ↓</div>
+        </a>
+    </section>
+
+    <section id="team" class="section roster-section">
+        <div class="section-kicker">// 001 — THE ORDER</div>
+        <div class="section-heading">
+            <div>
+                <h2>THE <span>ROSTER</span></h2>
+                <p>One core. Different strengths. One signal.</p>
+            </div>
+            <div class="section-mark">✦</div>
+        </div>
+
+        <div class="role-block">
+            <div class="role-label">CAPTAIN</div>
+            <div class="featured-card" id="captainCard"></div>
+        </div>
+
+        <div class="role-block">
+            <div class="role-label">VICE CAPTAIN</div>
+            <div class="featured-card" id="viceCaptainCard"></div>
+        </div>
+
+        <div class="role-block">
+            <div class="role-label">MEMBERS</div>
+            <div class="member-grid" id="memberGrid"></div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section achievements-section">
+
+    <div class="section-kicker">// 002 — THE LEGACY</div>
+
+    <div class="section-heading">
+        <div>
+            <h2>HALL OF <span>GLORY</span></h2>
+            <p>Every trial leaves a mark. Every achievement becomes part of the RESONANCE legacy.</p>
+        </div>
+
+        <div class="section-mark">✦</div>
+    </div>
+
+    <div class="achievement-grid" id="achievementGrid"></div>
+
+</section>
+
+    <section id="matches" class="section competition-section">
+        <div class="section-kicker">// 003 — THE CURRENT TRIAL</div>
+        <div class="section-heading compact">
+            <div>
+                <h2>IN THE <span>FOG</span></h2>
+                <p>What RESONANCE is playing right now</p>
+            </div>
+        </div>
+
+        <div class="match-grid">
+            <article class="info-panel stone-panel">
+                <div class="moon-badge">☾</div>
+                <p class="panel-label">CURRENT TOURNAMENT</p>
+                <h3 id="tournamentName">TBA</h3>
+                <div class="mini-row"><span>STATUS</span><strong id="tournamentStatus">TBA</strong></div>
+                <div class="mini-row"><span>REGION</span><strong id="tournamentRegion">APAC</strong></div>
+                <div class="mini-row"><span>FORMAT</span><strong id="tournamentFormat">4V4</strong></div>
+            </article>
+
+            <article class="info-panel opponent-panel">
+                <div class="wing-divider">✧</div>
+                <p class="panel-label">CURRENT OPPONENT</p>
+                <div class="match-versus">
+                    <div>
+                        <span class="team-mini">OUR SIDE</span>
+                        <strong>RESONANCE</strong>
+                    </div>
+                    <span class="vs">VS</span>
+                    <div class="opponent-wrap">
+                        <span class="team-mini">THE OTHER SIDE</span>
+                        <div class="opponent-name" id="opponentName">TBA</div>
+                    </div>
+                </div>
+                <div class="match-meta">
+                    <span id="matchRound">ROUND — TBA</span>
+                    <span id="matchStatus">STATUS — TBA</span>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <section id="history" class="section history-section">
+
+    <div class="section-kicker">// 004 — THE BATTLE LOG</div>
+
+    <div class="section-heading compact">
+        <div>
+            <h2>MATCH <span>HISTORY</span></h2>
+            <p>Every opponent. Every result. Every trial.</p>
+        </div>
+    </div>
+
+    <div class="match-history" id="matchHistory"></div>
+
+</section>
+
+    <section id="record" class="section record-section">
+        <div class="section-kicker">// 005 — THE CHRONICLE</div>
+        <div class="record-shell">
+            <div class="record-intro">
+                <h2>OUR <span>RUN</span></h2>
+                <p>Every win becomes another mark in the story.</p>
+            </div>
+            <div class="record-grid">
+                <article class="record-card main-record">
+                    <span>CURRENT WIN STREAK</span>
+                    <strong id="winStreak">0</strong>
+                    <small>CONSECUTIVE WINS</small>
+                </article>
+                <article class="record-card"><span>WINS</span><strong id="wins">0</strong></article>
+                <article class="record-card"><span>LOSSES</span><strong id="losses">0</strong></article>
+                <article class="record-card"><span>WIN RATE</span><strong id="winRate">0%</strong></article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-crest">✦</div>
+        <p class="section-kicker">// 004 — THE GATE</p>
+        <h2>STEP INTO<br><span>THE RESONANCE.</span></h2>
+        <p>Follow the roster. Watch the next trial. Find the team signal.</p>
+        <a class="btn btn-primary" id="contactDiscord" href="#" target="_blank" rel="noopener">JOIN DISCORD ↗</a>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <span>© 2026 RESONANCE</span>
+    <span>DEAD BY DAYLIGHT / ESPORTS</span>
+    <span>FIND YOUR FREQUENCY</span>
+</footer><!-- PLAYER PROFILE MODAL -->
+<div class="player-modal" id="playerModal" aria-hidden="true">
+
+    <div class="player-modal-backdrop" data-close-modal></div>
+
+    <div
+        class="player-modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalPlayerName"
+    >
+
+        <button
+            class="modal-close"
+            type="button"
+            aria-label="Close player profile"
+            data-close-modal
+        >
+            ×
+        </button>
+
+        <div class="modal-player-main">
+
+            <div class="modal-photo-wrap">
+                <img
+                    id="modalPlayerImage"
+                    class="modal-player-photo"
+                    src=""
+                    alt=""
+                >
+            </div>
+
+            <div class="modal-player-content">
+
+                <div class="modal-kicker">
+                    RESONANCE / PLAYER PROFILE
+                </div>
+
+                <h2 id="modalPlayerName">PLAYER</h2>
+
+                <div
+                    class="modal-player-role"
+                    id="modalPlayerRole"
+                >
+                    MEMBER
+                </div>
+
+                <p
+                    class="modal-player-description"
+                    id="modalPlayerDescription"
+                ></p>
+
+                <div class="profile-meta-grid">
+
+                    <div class="profile-meta">
+                        <span>TEAM ROLE</span>
+                        <strong id="modalTeamRole">TBA</strong>
+                    </div>
+
+                    <div class="profile-meta">
+                        <span>COMPETITIVE ROLE</span>
+                        <strong id="modalCompetitiveRole">TBA</strong>
+                    </div>
+
+                    <div class="profile-meta">
+                        <span>REGION</span>
+                        <strong id="modalRegion">TBA</strong>
+                    </div>
+
+                    <div class="profile-meta">
+                        <span>MAINS</span>
+                        <strong id="modalMains">TBA</strong>
+                    </div>
+
+                </div>
+
+                <blockquote
+    class="player-quote"
+    id="modalQuote"
+></blockquote>
+
+<!-- COMPETITIVE HISTORY -->
+<div
+    class="modal-career"
+    id="modalCareer"
+    style="display: none;"
+>
+
+    <div class="modal-career-title">
+        COMPETITIVE HISTORY
+    </div>
+
+    <div id="modalCareerList"></div>
+
+</div>
+
+<div id="modalDiscordSlot"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="data/team.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
