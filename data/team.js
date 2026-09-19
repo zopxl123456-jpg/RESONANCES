@@ -229,9 +229,9 @@ captain: {
   },
 
   record: {
-    winStreak: 0,
-    wins: 0,
-    losses: 0
+    winStreak: 2,
+    wins: 2,
+    losses: 1
   },
 
   achievements: [],
