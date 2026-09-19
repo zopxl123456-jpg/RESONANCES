@@ -229,8 +229,8 @@ captain: {
   },
 
   record: {
-    winStreak: 2,
-    wins: 2,
+    winStreak: 3,
+    wins: 5,
     losses: 1
   },
 
