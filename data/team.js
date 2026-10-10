@@ -224,7 +224,7 @@ captain: {
 
   currentMatch: {
     opponent: "Johnblack",
-    Bo: "3",
+    ROUND: "3",
     status: "Play right now"
   },
 
