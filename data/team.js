@@ -216,16 +216,16 @@ captain: {
   ],
 
   tournament: {
-    name: "Ascension League",
+    name: "DEAD BY THAILAND TOURNAMENT",
     status: "Competing right now",
-    region: "EU",
+    region: "SEA",
     format: "4V4"
   },
 
   currentMatch: {
-    opponent: "TBA",
-    round: "TBA",
-    status: "TBA"
+    opponent: "Johnblack",
+    Bo: "3",
+    status: "Play right now"
   },
 
   record: {
